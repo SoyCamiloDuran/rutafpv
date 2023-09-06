@@ -29,7 +29,9 @@ if not DEBUG:
     ALLOWED_HOSTS = [ 
         "rutafpv.cl",
         ".rutafpv.cl",
-        "www.rutafpv.cl"
+        "www.rutafpv.cl",
+        "https://rutafpv.onrender.com",
+        "rutafpv.onrender.com",
     ]
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
@@ -134,10 +136,12 @@ CSRF_TRUSTED_ORIGINS = [
 if not DEBUG:
     CORS_ORIGIN_WHITELIST = [
         'https://rutafpv.cl',
+        "https://rutafpv.onrender.com",
     ]
 
     CSRF_TRUSTED_ORIGINS = [
         'https://rutafpv.cl',
+        "https://rutafpv.onrender.com",
     ]
 
 
