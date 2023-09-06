@@ -17,7 +17,7 @@ DOMAIN = 'http://localhost:8000'
 SITE_NAME = 'RutaFPV'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 
 ALLOWED_HOSTS = [
@@ -26,8 +26,7 @@ ALLOWED_HOSTS = [
 ]
 
 if not DEBUG:
-    ALLOWED_HOSTS = [
-        
+    ALLOWED_HOSTS = [ 
         "rutafpv.cl",
         ".rutafpv.cl",
         "www.rutafpv.cl"
@@ -134,15 +133,11 @@ CSRF_TRUSTED_ORIGINS = [
 
 if not DEBUG:
     CORS_ORIGIN_WHITELIST = [
-        'http://rutafpv.cl',
-        'http://admin.rutafpv.cl',
-        'http://blog.rutafpv.cl',
+        'https://rutafpv.cl',
     ]
 
     CSRF_TRUSTED_ORIGINS = [
-        'http://rutafpv.cl',
-        'http://admin.rutafpv.cl',
-        'http://blog.rutafpv.cl',
+        'https://rutafpv.cl',
     ]
 
 
