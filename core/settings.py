@@ -21,11 +21,11 @@ SITE_NAME = 'Ruta FPV'
 DEBUG = False
 
 ALLOWED_HOSTS = [
+    "127.0.0.1",
+    "localhost",
     ".rutafpv.cl",
     "rutafpv.cl",
     "www.rutafpv.cl"
-    "127.0.0.1",
-    "localhost"
 ]
 
 if not DEBUG:
