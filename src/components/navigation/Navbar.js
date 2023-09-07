@@ -9,7 +9,7 @@ import {Helmet} from 'react-helmet'
 
 const navigation = [
     { name: 'Inicio', href: '/', current: false },
-    { name: 'Blog', href: '/blog', current: false },
+    { name: 'Cursos', href: '/cursos', current: false },
     { name: 'Aprende FPV', href: '/blog', current: false },
     { name: 'Nosotros', href: '/nosotros', current: false },
     { name: 'Contacto', href: '/contacto', current: false },
@@ -105,7 +105,7 @@ function Navbar({account}){
         <>
 
             <Helmet>
-                <title>RutaFPV</title>
+                <title>Ruta FPV</title>
                 <meta name="description" content="Pagina de Inicio - RutaFPV"/>
                 <link rel="canonical" href="https://rutafpv.cl" />
             </Helmet>
