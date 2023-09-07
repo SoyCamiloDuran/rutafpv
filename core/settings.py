@@ -1,4 +1,5 @@
 from pathlib import Path
+import dj_database_url
 import os
 import environ
 
@@ -14,11 +15,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 DOMAIN = 'http://localhost:8000'
 
-SITE_NAME = 'RutaFPV'
+SITE_NAME = 'Ruta FPV'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-
 
 ALLOWED_HOSTS = [
     ".rutafpv.cl",
@@ -120,8 +120,12 @@ WSGI_APPLICATION = 'core.wsgi.application'
 #     }
 # }
 
+# DATABASES = {
+#     "default": env.db("DATABASE_URL"),
+# }
+
 DATABASES = {
-    "default": env.db("DATABASE_URL"),
+	"default": dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
