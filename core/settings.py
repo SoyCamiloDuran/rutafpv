@@ -67,7 +67,6 @@ THIRD_PARTY_APPS = [
     'ckeditor_uploader',
     'storages',
     'core',
-    'tailwind',
     'theme'
 ]
 
