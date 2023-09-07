@@ -67,7 +67,6 @@ THIRD_PARTY_APPS = [
     'ckeditor_uploader',
     'storages',
     'core',
-    'theme'
 ]
 
 INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS + THIRD_PARTY_APPS
