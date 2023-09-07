@@ -131,7 +131,7 @@ CORS_ORIGIN_WHITELIST = [
     'http://localhost:8000',
     'http://127.0.0.1:8000',
     'http://127.0.0.1:3000',
-    'http://rutafpv.cl',
+    'https://rutafpv.cl',
     "https://rutafpv.s3.amazonaws.com",
     "https://rutafpv.onrender.com",
     
@@ -142,19 +142,19 @@ CSRF_TRUSTED_ORIGINS = [
     'http://localhost:8000',
     'http://127.0.0.1:8000',
     'http://127.0.0.1:3000',
-    'http://rutafpv.cl',
+    'https://rutafpv.cl',
     "https://rutafpv.s3.amazonaws.com",
     "https://rutafpv.onrender.com",
 ]
 
 if not DEBUG:
     CORS_ORIGIN_WHITELIST = [
-        'http://rutafpv.cl',
+        'https://rutafpv.cl',
         "https://rutafpv.onrender.com",
     ]
 
     CSRF_TRUSTED_ORIGINS = [
-        'http://rutafpv.cl',
+        'https://rutafpv.cl',
         "https://rutafpv.onrender.com",
     ]
 
