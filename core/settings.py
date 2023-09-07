@@ -149,12 +149,12 @@ CSRF_TRUSTED_ORIGINS = [
 
 if not DEBUG:
     CORS_ORIGIN_WHITELIST = [
-        'https://rutafpv.cl',
+        'http://rutafpv.cl',
         "https://rutafpv.onrender.com",
     ]
 
     CSRF_TRUSTED_ORIGINS = [
-        'https://rutafpv.cl',
+        'http://rutafpv.cl',
         "https://rutafpv.onrender.com",
     ]
 
